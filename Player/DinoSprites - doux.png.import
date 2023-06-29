@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DinoSprites - doux.png-916f4d462ea5fa568a7f22d733068951.stex"
+path="res://.import/DinoSprites - doux.png-0abf756259927338c1383e0f5903f38d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sheets/DinoSprites - doux.png"
-dest_files=[ "res://.import/DinoSprites - doux.png-916f4d462ea5fa568a7f22d733068951.stex" ]
+source_file="res://Player/DinoSprites - doux.png"
+dest_files=[ "res://.import/DinoSprites - doux.png-0abf756259927338c1383e0f5903f38d.stex" ]
 
 [params]
 
