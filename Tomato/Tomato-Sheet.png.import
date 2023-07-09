@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tomato-Sheet.png-5c4b1fc72a8ede4591ed26a1eb5730a5.stex"
+path="res://.import/Tomato-Sheet.png-1f35aac2a45dab287dc384341895b78f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tomato/Tomato-Sheet/Tomato-Sheet.png"
-dest_files=[ "res://.import/Tomato-Sheet.png-5c4b1fc72a8ede4591ed26a1eb5730a5.stex" ]
+source_file="res://Tomato/Tomato-Sheet.png"
+dest_files=[ "res://.import/Tomato-Sheet.png-1f35aac2a45dab287dc384341895b78f.stex" ]
 
 [params]
 

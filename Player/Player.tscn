@@ -1,10 +1,7 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player/DinoSprites - mort.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5, 3.5 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Damage"
@@ -21,6 +18,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ 16, 15, 13 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D4:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -246, -8, -245, -7, -245, 0, -248, 0, -248, 1, -248, 6, -249, 6, -249, 7, -254, 7, -254, 8, -254, 9, -257, 9, -257, 7, -257, 6, -257, 6, -258, 6, -259, 6, -258, 3, -258, 1, -259, 1, -260, -2, -260, -5, -258, -7, -255, -8 ), PoolVector2Array( -246, -8, -245, -7, -245, 0, -248, 0, -248, 1, -248, 6, -249, 6, -249, 7, -254, 7, -254, 8, -254, 9, -257, 9, -257, 7, -257, 6, -257, 6, -258, 6, -259, 6, -258, 3, -258, 1, -259, 1, -260, -2, -260, -5, -258, -7, -255, -8 ), PoolVector2Array( -246, -8, -245, -7, -245, 0, -248, 0, -248, 1, -248, 6, -249, 6, -249, 7, -254, 7, -254, 8, -254, 9, -257, 9, -257, 7, -257, 6, -257, 6, -258, 6, -259, 6, -258, 3, -258, 1, -259, 1, -260, -2, -260, -5, -258, -7, -255, -8 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -39,6 +48,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 18, 19, 20, 21, 22, 23 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D4:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ), PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ), PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ), PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ), PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ), PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ), PoolVector2Array( -241, -5, -240, -5, -240, 2, -246, 2, -246, 3, -251, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -258, 1, -256, 1, -254, 0, -256, 0, -256, -5, -255, -5, -255, -6, -241, -6 ) ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "Move"
@@ -56,6 +77,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 4, 5, 6, 7, 8, 9 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D4:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ), PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ), PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ), PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ), PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ), PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ), PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ) ]
+}
 
 [sub_resource type="Animation" id=5]
 length = 0.001
@@ -71,42 +104,23 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 1 ]
 }
-
-[sub_resource type="AnimationNodeAnimation" id=17]
-animation = "Damage"
-
-[sub_resource type="AnimationNodeAnimation" id=18]
-animation = "Dash"
-
-[sub_resource type="AnimationNodeAnimation" id=19]
-animation = "Move"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=20]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=21]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=22]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=23]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=24]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=25]
-
-[sub_resource type="AnimationNodeStateMachine" id=15]
-states/Damage/node = SubResource( 17 )
-states/Damage/position = Vector2( 529, 59 )
-states/Dash/node = SubResource( 18 )
-states/Dash/position = Vector2( 609, 189 )
-states/Move/node = SubResource( 19 )
-states/Move/position = Vector2( 240, 118 )
-transitions = [ "Move", "Dash", SubResource( 20 ), "Dash", "Move", SubResource( 21 ), "Dash", "Damage", SubResource( 22 ), "Move", "Damage", SubResource( 23 ), "Damage", "Move", SubResource( 24 ), "Damage", "Dash", SubResource( 25 ) ]
-start_node = "Move"
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id=16]
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D4:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 ) ]
+}
 
 [node name="Player" type="RigidBody2D"]
 collision_mask = 2
+mass = 0.102041
+gravity_scale = 20.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -114,22 +128,12 @@ texture = ExtResource( 1 )
 hframes = 24
 frame = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 5 )
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Damage = SubResource( 2 )
 anims/Dash = SubResource( 3 )
 anims/Move = SubResource( 4 )
 anims/RESET = SubResource( 5 )
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 15 )
-anim_player = NodePath("../AnimationPlayer")
-active = true
-parameters/playback = SubResource( 16 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2( 0, -50 )
-current = true
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
+position = Vector2( 252, 0 )
+polygon = PoolVector2Array( -244, -7, -243, -7, -243, 0, -248, 0, -248, 8, -249, 8, -249, 9, -252, 9, -252, 8, -253, 8, -253, 9, -256, 9, -256, 6, -257, 6, -257, 5, -258, 5, -258, 3, -256, 3, -256, 1, -257, 1, -257, -3, -258, -3, -258, -6, -257, -6, -257, -7, -256, -7, -256, -8, -244, -8 )
